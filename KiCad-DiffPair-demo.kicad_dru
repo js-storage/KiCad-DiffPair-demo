@@ -1,9 +1,5 @@
 (version 20211014)
-(rule "DIFF to GND clearance"
-	(constraint clearance (min 0.6mm) ) 
-	(condition "A.NetClass == 'diff' && B.NetName == 'gnd' && A.intersectsArea('mipiS')")
-)
-(rule "DIFF to GND clearance"
+(rule "diff to GND clearance"
 	(constraint clearance (min 0.6mm) ) 
 	(condition "A.NetClass == 'diff' && B.NetName == 'gnd' && A.intersectsArea('TMDS')")
 )
